@@ -5,5 +5,5 @@ output "id" {
 
 output "name" {
   description = "Resource Group Name"
-  value       = "${var.name}"
+  value       = "${azurerm_resource_group.rg.name}"
 }
