@@ -3,22 +3,12 @@ variable "location" {
   default     = "East US"
 }
 
-variable "system_name"{
+variable "system_name" {
   description = "System name for specifying the name of resource group"
-  default     = "system"
+  default     = "scraper"
 }
 
 variable "resource_group_name" {
   description = "The resource group name"
-  default = "${var.system_name}-rg"
-
-}
-
-variable "tags" {
-  description = "The tags to associate with your resource group"
-  type        = "map"
-
-  default = {
-    costcenter = ""${var.system_name}"
-  }
+  default     = "${var.system_name}-rg"
 }
