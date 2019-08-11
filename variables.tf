@@ -10,5 +10,5 @@ variable "system_name" {
 
 variable "resource_group_name" {
   description = "The resource group name"
-  default     = "${var.system_name}-rg"
+  default     = "scraper-rg"
 }
