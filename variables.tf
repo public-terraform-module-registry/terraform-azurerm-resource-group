@@ -6,3 +6,13 @@ variable "location" {
 variable "resource_group_name" {
   description = "The resource group name"
 }
+
+variable "tags" {
+  description = "Map of tags to apply to The resource group"
+  type        = "map"
+
+  default = {
+    tag1 = ""
+    tag2 = ""
+  }
+}
